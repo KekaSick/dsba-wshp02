@@ -26,8 +26,28 @@
 // the entrypoint of the application
 int main()
 {
-    std::cout << "Hello world!";
+    int n;
 
+    std::cout << "Please input a boundary n for the table" << std::endl;
+    std::cin >> n;
+
+    for (int i = 0; i <= n; i++){
+        for (int j = 0; j<=n; j++){
+            if (i == 0 && j == 0){
+                std::cout << '\t';
+            }
+            else if(i == 0){
+                std::cout << j << '\t';
+            }
+            else if(j == 0){
+                std::cout << i << '\t';
+            }
+            else{
+                std::cout << j*i << '\t';
+            }
+        }
+        std::cout << std::endl;
+    }
     // TODO: place your code starting from this line
 
     return 0;
