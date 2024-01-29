@@ -26,6 +26,9 @@
 // the entrypoint of the application
 int main()
 {
+    std::string a;
+    do
+    {
     int n;
 
     std::cout << "Please input a boundary n for the table" << std::endl;
@@ -48,6 +51,10 @@ int main()
         }
         std::cout << std::endl;
     }
+    std::cout << "Would you like to repeat the process type (Yes/No): ";
+    std::cin >> a;
+    }
+    while(a == "Yes");
     // TODO: place your code starting from this line
 
     return 0;
